@@ -2,7 +2,7 @@ A simulation of random generation of human individuals from different races or e
 subgroups. The individuals could have genomic differences according to biological distance. 
 Germline and somatic mutations can be simulated in the created individuals from the 
 corresponding reference genome. This could be applied to cancer studies, for instance, to
-take into account the occurrence of benign mutations in different clinical subgroups
+take into account the occurrence of benign mutations in different clinical subgroups.
 
 The example is based on typeinfo/pets/PetCreator.java (page 406) Think in Java
 4th Edition - Bruce Eckel.

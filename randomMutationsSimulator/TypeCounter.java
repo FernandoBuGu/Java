@@ -7,9 +7,9 @@ import static net.mindview.util.Print.*;
 import net.mindview.util.*;
 
 public class TypeCounter extends LinkedHashMap<Class<?>,Integer>{
-	/* countClass(Class<?>) updates value for the key-Class and its superClass(es) through recursive call of the method
-	 * count(Object) if Object-class belongs to class provided in constructor, calls countClass
-	 * toString returns printable TypeCounter
+	/* countClass(Class<?>): updates value for the key-Class and its superClass(es) through recursive call of the method.
+	 * count(Object): if Object-class belongs to class provided in constructor, calls countClass.
+	 * toString(): returns printable TypeCounter.
 	 */
 	public Class<?> baseType;
 	TypeCounter(Class<?> baseType){

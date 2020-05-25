@@ -1,13 +1,11 @@
 package exercises;
 
 /**
- * Generate random combinations of String[] from a larger String[]
+ * Prints random combinations of String[] from a larger String[]
  * 
  * Applications:
  * In this case, each String is a Breast-Cancer-gene-name
- * from a set of 13 very relevant breast cancer genes. 
  * Combinations could represent interactions.
- * A number of gene combinations are printed.
  * 
  * @author feBueno, May 2020
  */
@@ -34,9 +32,9 @@ public class GenesCombinations {
 		 * 		String[]: GENES_ArrStr, in this case
 		 * 
 		 * In:
-		 * 		maxCombinationSize_int: maximum number of genes allowed in each Combination
+		 * 		maxCombinationSize_int: maximum number of genes allowed in each combination
 		 * 		enableLesser_boo: whether lesser combination should be allowed
-		 * 			(i.e. if maxCombinationSize_int=5, combinations with 2, 3 and 4 genes are also allowed)
+		 * 			(i.e. if maxCombinationSize_int=5 & enableLesser_boo=true, combinations with [2-5] elements are allowed)
 		 * 
 		 * Out: 
 		 * 		combination_ArrStr: combination sampled from GENES_ArrStr with <= maxCombinationSize_int elements
@@ -48,7 +46,7 @@ public class GenesCombinations {
 		
 		
 		//set combination size
-		int combinationSize_int;//number of genes to be included in the combination
+		int combinationSize_int;//number of elements to be included in the combination
 		do
 			combinationSize_int= rand.nextInt(maxCombinationSize_int+1);//+1 since arrays start at index 0
 		while(combinationSize_int<2);//minimum combination size should be 2
@@ -79,9 +77,9 @@ public class GenesCombinations {
 	
 	public static void main(String[] args) {
 		int nCombinations_int=10;//number of combinations to be printed
-		int maxCombinationSize_int=3;//maximum number of genes per Combination
+		int maxCombinationSize_int=3;//maximum number of elements per combination
 		boolean enableLesser_boo=true;//whether lesser combinations should be allowed 
-			//(i.e. if maxCombinationSize_int=5, Combinations with 2, 3 and 4 genes are also allowed)
+		 	//(i.e. if maxCombinationSize_int=5 & enableLesser_boo=true, combinations with [2-5] elements are allowed)
 		
 		//return and print nCombinations_int combinations 
 		for(int i=0;i<nCombinations_int;i++) {

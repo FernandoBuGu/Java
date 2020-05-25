@@ -23,7 +23,7 @@ public class VampireNumbers {
 	 * Each inner-list is a 4-digits vampire number, 
 	 * Each integer is a digit within the vampire number
 	 * 
-	 * output:
+	 * Output:
 	 * [[1, 3, 9, 5], [1, 2, 6, 0], [6, 8, 8, 0], [2, 1, 8, 7], [1, 8, 2, 7], [1, 4, 3, 5], [1, 5, 3, 0]]
 	 * 
 	 * example: 1395 is a vampire number since: 
@@ -173,4 +173,6 @@ public class VampireNumbers {
 	Set<String> resultsSet = convertListToSet(resultsList);//remove duplicates
 	print(resultsSet);
 	}
-}
+} /*Output:
+[[1, 3, 9, 5], [1, 2, 6, 0], [6, 8, 8, 0], [2, 1, 8, 7], [1, 8, 2, 7], [1, 4, 3, 5], [1, 5, 3, 0]]
+*/

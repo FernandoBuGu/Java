@@ -15,7 +15,7 @@ import static net.mindview.util.Print.*;
 
 public class GenesCombinations {
 
-	static Random rand = new Random();//set seed for reproducible
+	static Random rand = new Random(66);
 	
 	public static final String[] GENES_ArrStr = {//Array of Strings from which combinations (smaller Array of String) are sampled
 		"BRCA1", "BRCA2", "TP53", "PTEN", 
@@ -87,4 +87,15 @@ public class GenesCombinations {
 		}
 	}
 	
-}
+} /*Output:
+[CHEK2, BRIP1]
+[PTEN, TP53, BARD1]
+[BARD1, MLH1]
+[PALB2, MLH1]
+[NBN, BRIP1, PTEN]
+[NF1, CHEK2, STK11]
+[BRCA1, ATM]
+[CDH1, PTEN, ATM]
+[TP53, ATM, NF1]
+[NF1, CHEK2]
+*/

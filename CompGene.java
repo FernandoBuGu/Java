@@ -1,7 +1,7 @@
 package exercises;
 
 /**
- * Define any class as java.lang.Comparable. Thus, simplifying arrays-creation and comparison of elements within.
+ * Implement any class as java.lang.Comparable. Thus, simplifying array-creation and comparison of elements within.
  * Adapted from arrays/CompType.java, Chapter 16, page 557, Think in Java (4th edition) - Bruce Eckel
  * 
  * The class has a Generator method that can be called from java.lang.Generated.array a number of times.

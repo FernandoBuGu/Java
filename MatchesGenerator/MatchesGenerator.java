@@ -1,7 +1,5 @@
 package exercises;
 
-import static net.mindview.util.Print.print;
-
 /**
  * Implements a Map generator with a next-method that 
  * puts in a Map as many elements as specified in constructor.
@@ -26,7 +24,7 @@ import static net.mindview.util.Print.print;
  * fernando.bueno.gutie@gmail.com
  */
 
-
+import static net.mindview.util.Print.print;
 import java.util.*;
 import net.mindview.util.*;//https://github.com/rawbenny/ThinkInJava4/tree/master/src/net/mindview/util
 	/*the following is used: class: Pair.java, CollectionData.java, MapData.java
@@ -36,7 +34,7 @@ import net.mindview.util.*;//https://github.com/rawbenny/ThinkInJava4/tree/maste
 class SequencesGenerator implements Generator<Pair<String,Integer>>,Iterable<Integer> {
 	
 	int kmerSize_int;//kmer size (number of nucleotides)
-	int nConditions_int;//number of conditions to claim similarity
+	int nConditions_int;//number of conditions to claim similarity bt two sequences
 	int maxNmatches_int;//maximum number of matches per kmer to claim similarity
 
 	ArrayList<String> kmers_StrArrLis;//each element will be a kmer of kmerSize
@@ -78,7 +76,7 @@ public class MatchesGenerator {
 		
 		//DEFINE BY USER
 		int kmerSize_int=8;//kmer size (number of nucleotides)
-		int nConditions_int=5;//number of conditions to claim similarity
+		int nConditions_int=5;//number of conditions to claim similarity bt two sequences
 		int maxNmatches_int=400;//maximum number of matches per kmer to claim similarity
 		
 	    print(MapData.map(new SequencesGenerator(kmerSize_int,nConditions_int,maxNmatches_int), nConditions_int));
